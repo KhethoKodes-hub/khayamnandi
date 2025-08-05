@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Values | Khaya-Mnandi Supply & Catering</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5e35b1;
+            --primary-dark: #4527a0;
+            --primary-light: #7e57c2;
+            --secondary: #26a69a;
+            --dark: #263238;
+            --dark-gray: #455a64;
+            --medium-gray: #90a4ae;
+            --light-gray: #eceff1;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark);
+            background-color: var(--white);
+            line-height: 1.6;
+            padding-top: 72px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Prata', serif;
+            font-weight: 400;
+        }
+
+        .navbar {
+            background-color: var(--dark);
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .value-card {
+            border-radius: 8px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+            background-color: var(--light-gray);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background-color: var(--primary);
+            transition: height 0.3s ease;
+        }
+
+        .value-card:hover::before {
+            height: 100%;
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .csr-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+
+        .csr-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 1.5rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--primary-light);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3rem;
+            top: 0.25rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: var(--primary);
+            border: 3px solid var(--light-gray);
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span style="font-family: 'Prata', serif;">KHAYA-MNANDI</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="values.html">Values</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Our Values & CSR</h1>
+            <p class="lead">Guiding principles that shape everything we do</p>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-primary">OUR FOUNDATION</h6>
+                <h2>Core Values</h2>
+                <p class="lead">The principles that guide our decisions and actions</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Integrity</h3>
+                        <p>We uphold the highest standards of professionalism and ethical conduct in all our business relationships.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Quality</h3>
+                        <p>From ingredient sourcing to final delivery, we maintain rigorous quality control processes.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Community</h3>
+                        <p>We're deeply invested in local development through skills programs and employment creation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>We embrace new technologies and methodologies to enhance our service delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSR Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-primary">GIVING BACK</h6>
+                <h2>Corporate Social Responsibility</h2>
+                <p class="lead">Improving lives in our local communities</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="csr-card bg-white">
+                        <div class="csr-image" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                        <div class="p-4">
+                            <h3>Youth Development</h3>
+                            <p>We pioneer various initiatives including youth skills development programmes and the creation of new roles in our organisation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="csr-card bg-white">
+                        <div class="csr-image" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                        <div class="p-4">
+                            <h3>Education Support</h3>
+                            <p>Khaya-Mnandi is a regular supplier of food parcels to Ratang Thuto Secondary School in Bolchoko, Postmasburg.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="csr-card bg-white">
+                        <div class="csr-image" style="background-image: url('https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                        <div class="p-4">
+                            <h3>Women Empowerment</h3>
+                            <p>As a 100% Black Women Owned business, we're committed to creating opportunities for women in our community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h4 class="mb-4">Our CSR Approach</h4>
+                    <p>Khaya-Mnandi Supply and Catering supports various initiatives which are aimed at improving the lives of the people in our local communities, both from a financial and social perspective.</p>
+                    <p>We believe that business success should translate to community development, which is why we invest a portion of our profits back into programs that uplift those around us.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                                <div>
+                                    <h5>Local Employment</h5>
+                                    <p class="text-muted">Prioritizing hiring from our community</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                                <div>
+                                    <h5>Skills Training</h5>
+                                    <p class="text-muted">Developing capabilities in our workforce</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                                <div>
+                                    <h5>School Support</h5>
+                                    <p class="text-muted">Feeding schemes and infrastructure</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                                <div>
+                                    <h5>Supplier Development</h5>
+                                    <p class="text-muted">Supporting other small businesses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="mb-4">Our Journey</h4>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h5>2012</h5>
+                            <p>Founded by Monica Nappie with a vision to provide quality catering services to the mining sector.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>2015</h5>
+                            <p>Expanded services to include supply chain solutions and launched first CSR initiative.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>2018</h5>
+                            <p>Awarded first major mining contract and established school feeding program.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>2021</h5>
+                            <p>Recognized as a leading BWO enterprise in the Northern Cape province.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>2023</h5>
+                            <p>Awarded two catering service contracts at King and Bruce Mine in Kathu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employment Code -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2>Employment Code</h2>
+                    <p class="mb-0">Khaya-Mnandi Supply and Catering is an equal opportunity company that subscribes to and upholds governing practices and principles of affirmative action, gender equality, non-racism and non-discrimination of any kind.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light">Join Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3>Khaya-Mnandi</h3>
+                    <p>Premium catering and supply solutions for the Northern Cape region.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Contact Us</h5>
+                    <p>13 Mpetsheni Street, Boichoko<br>Postmasburg, 8420<br>+27 (0)83 968 6506<br>thapelonappie@gmail.com</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 Khaya-Mnandi Supply & Catering. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">100% Black Women Owned & Managed</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Animate value cards on scroll
+        const valueCards = document.querySelectorAll('.value-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        valueCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

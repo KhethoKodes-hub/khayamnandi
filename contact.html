@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Khaya-Mnandi Supply & Catering</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5e35b1;
+            --primary-dark: #4527a0;
+            --primary-light: #7e57c2;
+            --secondary: #26a69a;
+            --dark: #263238;
+            --dark-gray: #455a64;
+            --medium-gray: #90a4ae;
+            --light-gray: #eceff1;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark);
+            background-color: var(--white);
+            line-height: 1.6;
+            padding-top: 72px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Prata', serif;
+            font-weight: 400;
+        }
+
+        .navbar {
+            background-color: var(--dark);
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .contact-info-card {
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .form-control, .form-select {
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(94,53,177,0.1);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+        }
+
+        .map-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span style="font-family: 'Prata', serif;">KHAYA-MNANDI</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="values.html">Values</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="lead">Get in touch with our team</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="contact-info-card text-center">
+                        <div class="contact-icon mx-auto">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>13 Mpetsheni Street<br>Boichoko, Postmasburg<br>8420, Northern Cape<br>South Africa</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="contact-info-card text-center">
+                        <div class="contact-icon mx-auto">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+27 (0)83 968 6506<br>Mon-Fri: 8am - 5pm<br>Sat: 9am - 1pm<br>Sun: Closed</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card text-center">
+                        <div class="contact-icon mx-auto">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>thapelonappie@gmail.com<br>For general inquiries<br>For quote requests<br>For career opportunities</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="contact-form">
+                        <h3 class="mb-4">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select">
+                                    <option selected>Select Service</option>
+                                    <option>Catering Services</option>
+                                    <option>Supply Chain</option>
+                                    <option>Facility Management</option>
+                                    <option>Other Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d23.12345678901234!3d-29.98765432109876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU5JzE1LjYiUyAyM8KwMDcnMjguNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section 
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-primary">OUR TEAM</h6>
+                <h2>Meet Our Leadership</h2>
+                <p class="lead">Dedicated professionals ready to assist you</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Monica Nappie" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h4>Monica Nappie</h4>
+                        <p class="text-muted">Founder & CEO</p>
+                        <p class="small">With extensive experience in the catering industry, Monica leads our team with vision and dedication.</p>
+                        <a href="mailto:monica@khayamnandi.co.za" class="btn btn-sm btn-outline-primary">Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Thapelo Nappie" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h4>Thapelo Nappie</h4>
+                        <p class="text-muted">Operations Manager</p>
+                        <p class="small">Oversees all daily operations and ensures our services meet the highest standards.</p>
+                        <a href="mailto:thapelo@khayamnandi.co.za" class="btn btn-sm btn-outline-primary">Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Lerato Molefe" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h4>Lerato Molefe</h4>
+                        <p class="text-muted">Head Chef</p>
+                        <p class="small">Creative culinary expert responsible for menu planning and food quality.</p>
+                        <a href="mailto:lerato@khayamnandi.co.za" class="btn btn-sm btn-outline-primary">Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Tebogo Smith" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h4>Tebogo Smith</h4>
+                        <p class="text-muted">Supply Chain Manager</p>
+                        <p class="small">Manages all procurement and logistics for our supply services.</p>
+                        <a href="mailto:tebogo@khayamnandi.co.za" class="btn btn-sm btn-outline-primary">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2>Ready to discuss your catering or supply needs?</h2>
+                    <p class="mb-0">Contact us today for a consultation and quote.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#contactForm" class="btn btn-light">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3>Khaya-Mnandi</h3>
+                    <p>Premium catering and supply solutions for the Northern Cape region.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="mt-3">13 Mpetsheni Street, Boichoko<br>Postmasburg, 8420<br>+27 (0)83 968 6506<br>thapelonappie@gmail.com</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 Khaya-Mnandi Supply & Catering. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">100% Black Women Owned & Managed</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const formData = new FormData(contactForm);
+                const data = {};
+                formData.forEach((value, key) => {
+                    data[key] = value;
+                });
+                
+                // Here you would typically send the data to a server
+                // For demonstration, we'll just show an alert
+                alert('Thank you for your message! We will get back to you soon.');
+                contactForm.reset();
+                
+                // Scroll to top
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Animate team cards on scroll
+        const teamCards = document.querySelectorAll('.team-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 200);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        teamCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
