@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Khaya-Mnandi Supply & Catering</title>
+    <title>About Us | Khaya-Mnandi Supply & Catering</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -46,7 +46,7 @@
         }
 
         .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -54,61 +54,45 @@
             text-align: center;
         }
 
-        .service-card {
+        .about-content {
+            padding: 5rem 0;
+        }
+
+        .founder-card {
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-            height: 100%;
-            border: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
 
-        .service-card:hover {
+        .founder-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-            border-color: var(--primary-light);
         }
 
-        .service-icon {
-            width: 70px;
-            height: 70px;
+        .feature-box {
+            padding: 2rem;
+            border-radius: 8px;
+            background-color: var(--light-gray);
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .feature-box:hover {
             background-color: var(--primary);
             color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin: -35px auto 20px;
         }
 
-        .service-features li {
-            position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.5rem;
+        .feature-box:hover p {
+            color: rgba(255,255,255,0.8);
         }
 
-        .service-features li::before {
-            content: '\f00c';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            color: var(--primary);
-        }
-
-        .tab-content {
-            padding: 2rem;
-            background-color: var(--light-gray);
-            border-radius: 8px;
-        }
-
-        .nav-pills .nav-link.active {
+        .ownership-badge {
             background-color: var(--primary);
-        }
-
-        .nav-pills .nav-link {
-            color: var(--dark);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            display: inline-block;
+            font-weight: 500;
         }
 
         footer {
@@ -117,6 +101,10 @@
             padding: 2rem 0;
         }
     </style>
+
+
+<link rel="icon" type="image/png" href="assets/Khayalogo.png">
+
 </head>
 <body>
     <!-- Navigation -->
@@ -131,8 +119,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="values.html">Values</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -143,98 +131,83 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-            <h1>Our Services</h1>
-            <p class="lead">Comprehensive solutions for your catering and supply needs</p>
+            <h1>About Our Company</h1>
+            <p class="lead">Committed to excellence since 2012</p>
         </div>
     </section>
 
-    <!-- Services Content -->
-    <section class="py-5">
+    <!-- About Content -->
+    <section class="about-content">
         <div class="container">
-            <div class="text-center mb-5">
-                <h6 class="text-primary">WHAT WE OFFER</h6>
-                <h2>Premium Catering & Supply Services</h2>
-                <p class="lead">Meeting and exceeding clients' expectations through our diverse range of offerings</p>
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h6 class="text-primary mb-3">OUR STORY</h6>
+                    <h2 class="mb-4">Building Excellence in Catering & Supply</h2>
+                    <p>Khaya-Mnandi Supply and Catering was founded in 2012 by entrepreneur Monica Nappie. Based in Postmasburg, the company is ideally located in the Tsantsabane Region of Siyanda District in the Northern Cape Province.</p>
+                    <p>Monica has extensive experience in the catering industry, having initially worked for Royal Minandi with the responsibility of managing significant catering contracts in the mining sector.</p>
+                    <div class="mt-4">
+                        <span class="ownership-badge me-2">100% Black Women Owned</span>
+                        <span class="ownership-badge">100% Black Female Management</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/blackowned.png" alt="Our Team" class="img-fluid rounded shadow">
+                </div>
             </div>
 
-            <div class="row g-4 mb-5">
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card bg-white">
-                        <div class="service-icon">
-                            <i class="fas fa-utensils"></i>
+            <div class="row my-5 py-5">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="feature-box">
+                        <div class="mb-3">
+                            <i class="fas fa-bullseye fa-2x mb-3"></i>
+                            <h3>Our Vision</h3>
                         </div>
-                        <div class="p-4">
-                            <h3 class="text-center mb-3">Catering Services</h3>
-                            <ul class="service-features list-unstyled">
-                                <li>Function and event catering</li>
-                                <li>Cost effective catering solutions</li>
-                                <li>Recipe and menu planning</li>
-                                <li>Specialist dietetic services</li>
-                                <li>Complete kitchen management</li>
-                                <li>Canteen and tuckshop services</li>
-                            </ul>
-                        </div>
+                        <p>To create a service-based company whose goal is to exceed clients' expectations and to increase our client base through superior performance.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card bg-white">
-                        <div class="service-icon">
-                            <i class="fas fa-truck"></i>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="feature-box">
+                        <div class="mb-3">
+                            <i class="fas fa-rocket fa-2x mb-3"></i>
+                            <h3>Our Mission</h3>
                         </div>
-                        <div class="p-4">
-                            <h3 class="text-center mb-3">Supply Services</h3>
-                            <ul class="service-features list-unstyled">
-                                <li>Groceries & confectionery</li>
-                                <li>Uniforms & safety equipment</li>
-                                <li>Building materials & hardware</li>
-                                <li>Office furniture & stationery</li>
-                                <li>Cleaning equipment & chemicals</li>
-                                <li>Catering equipment supply</li>
-                            </ul>
-                        </div>
+                        <p>To be the leading general supplier and preferred caterer in the Northern Cape Province, growing our business at a rate that is profitable and manageable.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card bg-white">
-                        <div class="service-icon">
-                            <i class="fas fa-building"></i>
+                <div class="col-lg-4">
+                    <div class="feature-box">
+                        <div class="mb-3">
+                            <i class="fas fa-chart-line fa-2x mb-3"></i>
+                            <h3>Our Growth</h3>
                         </div>
-                        <div class="p-4">
-                            <h3 class="text-center mb-3">Management Services</h3>
-                            <ul class="service-features list-unstyled">
-                                <li>Mine camp accommodation</li>
-                                <li>Facilities management</li>
-                                <li>Kitchen consulting and design</li>
-                                <li>Interior decoration services</li>
-                                <li>Staff training programs</li>
-                                <li>Quality control systems</li>
-                            </ul>
-                        </div>
+                        <p>Supported by a burgeoning mining industry and growth in the local economy of Postmasburg and Kathu, we continue to expand our services.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="row mt-5">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h4 class="mb-4">Our Service Approach</h4>
-                    <p>Khaya-Mnandi Supply and Catering specializes in meeting and exceeding clients' expectations through its diverse range of service offerings. These include procurement, catering, recipe and menu planning, complete kitchen management, mine camp accommodation management and specialist consulting.</p>
+            <div class="row mt-5 pt-5">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="founder-card">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Founder" class="img-fluid">
+                        <div class="p-4">
+                            <h3>Monica Nappie</h3>
+                            <p class="text-muted">Founder & CEO</p>
+                            <p>With her vision, niche opportunities in the catering industry were identified, resulting in the establishment of Khaya-Mnandi Supply and Catering.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h6 class="text-primary mb-3">OUR EXPERTISE</h6>
+                    <h2 class="mb-4">Why Choose Khaya-Mnandi</h2>
+                    <p>We specialize in catering services and the supply of general goods including groceries, meat, confectionery, stationery, building material, uniforms, safety equipment and clothing, catering equipment, office furniture, cleaning equipment, chemicals and much more.</p>
                     <p>Flexibility in the procurement and supply of goods and services is the differentiating feature of Khaya-Mnandi Supply and Catering.</p>
                     <div class="row mt-4">
                         <div class="col-md-6 mb-3">
                             <div class="d-flex">
                                 <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
                                 <div>
-                                    <h5>Custom Solutions</h5>
-                                    <p class="text-muted">Tailored to your specific requirements</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="d-flex">
-                                <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
-                                <div>
                                     <h5>Quality Assurance</h5>
-                                    <p class="text-muted">Rigorous standards for all services</p>
+                                    <p class="text-muted">Rigorous standards for all our services and products</p>
                                 </div>
                             </div>
                         </div>
@@ -242,8 +215,8 @@
                             <div class="d-flex">
                                 <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
                                 <div>
-                                    <h5>Reliable Delivery</h5>
-                                    <p class="text-muted">On-time, every time</p>
+                                    <h5>Community Focused</h5>
+                                    <p class="text-muted">Supporting local initiatives and development</p>
                                 </div>
                             </div>
                         </div>
@@ -251,77 +224,21 @@
                             <div class="d-flex">
                                 <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
                                 <div>
-                                    <h5>Competitive Pricing</h5>
-                                    <p class="text-muted">Cost-effective without compromising quality</p>
+                                    <h5>Experienced Team</h5>
+                                    <p class="text-muted">Highly trained professionals in catering and supply</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                                <div>
+                                    <h5>Flexible Solutions</h5>
+                                    <p class="text-muted">Customized services to meet your specific needs</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="bg-light p-4 rounded">
-                        <h4 class="mb-4">Service Portfolio</h4>
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>Catering Services</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="progress" style="height: 8px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>Supply Chain</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress" style="height: 8px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>Facility Management</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="progress" style="height: 8px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>Consulting</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="progress" style="height: 8px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Clients Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h6 class="text-primary">TRUSTED BY</h6>
-                <h2>Our Valued Clients</h2>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-6 col-md-3 mb-4">
-                    <img src="assets/kolomela.jpg" alt="Kolomela Mine" class="img-fluid">
-                </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <img src="assets/mine.jpg" alt="King and Bruce Mine" class="img-fluid">
-                </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <img src="assets/school.jpeg" alt="Ratang Thuto School" class="img-fluid">
-                </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <img src="assets/north.png" alt="Northern Cape Government" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -374,33 +291,26 @@
             }
         });
 
-        // Animate progress bars when they come into view
-        const animateProgressBars = () => {
-            const progressBars = document.querySelectorAll('.progress-bar');
-            progressBars.forEach(bar => {
-                const width = bar.style.width;
-                bar.style.width = '0';
-                setTimeout(() => {
-                    bar.style.width = width;
-                    bar.style.transition = 'width 2s ease';
-                }, 100);
-            });
-        };
-
-        // Check if progress bars are in view
-        const progressSection = document.querySelector('.bg-light');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateProgressBars();
-                    observer.unobserve(entry.target);
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
                 }
             });
-        }, { threshold: 0.5 });
-
-        if (progressSection) {
-            observer.observe(progressSection);
-        }
+        });
     </script>
 </body>
 </html>
