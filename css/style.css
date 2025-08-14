@@ -1130,3 +1130,10 @@ textarea.form-control {
             
             
         }
+
+        /* Hide testimonials section on screens smaller than 768px (mobile) */
+@media (max-width: 767px) {
+    .testimonials-section {
+        display: none;
+    }
+}
