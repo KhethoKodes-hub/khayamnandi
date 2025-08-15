@@ -1141,3 +1141,16 @@ textarea.form-control {
         display: none;
     }
 }
+
+
+/* Hide by default */
+.section-subtitle {
+    display: none;
+}
+
+/* Show on mobile (screens 767px and smaller) */
+@media (max-width: 767px) {
+    .section-subtitle {
+        display: block;
+    }
+}
