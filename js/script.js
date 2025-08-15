@@ -137,7 +137,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Intersection Observer for stats animation
     const statsSection = document.querySelector('.stats-section');
-if (statsSection) {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -145,10 +144,8 @@ if (statsSection) {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 }); // lower threshold for mobile
-    observer.observe(statsSection);
-}
-
+    }, { threshold: 0.5 });
+    
     if (statsSection) {
         observer.observe(statsSection);
     }
@@ -185,3 +182,5 @@ if (statsSection) {
         });
     }
 });
+
+

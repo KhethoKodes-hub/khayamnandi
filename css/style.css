@@ -1134,3 +1134,10 @@ textarea.form-control {
         display: none;
     }
 }
+
+
+@media (max-width: 767px) {
+    .stats-section {
+        display: none;
+    }
+}
